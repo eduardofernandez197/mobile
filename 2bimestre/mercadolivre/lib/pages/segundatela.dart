@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mercadolivre/widget/iconesPrincipal.dart';
+import 'package:mercadolivre/widget/iconesDois.dart';
 
 class segundatela extends StatefulWidget {
   const segundatela({super.key});
@@ -76,13 +78,46 @@ class _segundatelaState extends State<segundatela> {
                 ),
               ),
               SingleChildScrollView(
-                  child:
-                      Row(
-                        crossAxisAlignment: ,
+                child: Row(
+                  spacing: 15,
                   children: [
-
-
-                  ])),
+                    Icones('teste', 'assets/images/descontFundo.png'),
+                    Icones('teste1', 'assets/images/cupom.png'),
+                    Icones('teste1', 'assets/images/cupom.png'),
+                    Icones('teste1', 'assets/images/cupom.png'),
+                    Icones('teste1', 'assets/images/cupom.png'),
+                  ],
+                ),
+                scrollDirection: .horizontal,
+              ),
+              SizedBox(height: 10),
+              SingleChildScrollView(
+                child: Row(
+                  children: [
+                    IconesDois(
+                      'https://marketplace.canva.com/sIwb8/MACJZ1sIwb8/2/tl/canva-dollar-icon-MACJZ1sIwb8.png',
+                      'Menor que R\$40.000',
+                      'Descubraprodutos com desconto',
+                      'Mostrar produtos',
+                      () => {},
+                    ),
+                    IconesDois(
+                      'https://marketplace.canva.com/sIwb8/MACJZ1sIwb8/2/tl/canva-dollar-icon-MACJZ1sIwb8.png',
+                      'Menor que R\$40.000',
+                      'Descubraprodutos com desconto',
+                      'Mostrar produtos',
+                      () => {},
+                    ),
+                    IconesDois(
+                      'https://marketplace.canva.com/sIwb8/MACJZ1sIwb8/2/tl/canva-dollar-icon-MACJZ1sIwb8.png',
+                      'Menor que R\$40.000',
+                      'Descubraprodutos com desconto',
+                      'Mostrar produtos',
+                      () => {},
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
